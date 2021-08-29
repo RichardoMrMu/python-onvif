@@ -20,4 +20,8 @@ if __name__ == '__main__':
     ptzControl.goto_preset()
     ptzControl.zoom_relative(0.5,0.4)
 ```
+Then run like this :
+```shell
+pyhton ptz_control.py
+```
 enjoy it!
