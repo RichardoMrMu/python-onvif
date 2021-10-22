@@ -17,8 +17,9 @@ python move.py
 and see camera move successfully if connecting. And for [ptz_control.py](https://github.com/RichardoMrMu/python-onvif/blob/main/move.py), your should replace [this line](https://github.com/RichardoMrMu/python-onvif/blob/a4277a9957ec30a96ce359404948710d6cb9421d/ptz_control.py#L11) 's ip, username, passwd ans port as yours, and you can write your own main function like this :
 ```python
 if __name__ == '__main__':
-    ptzControl.goto_preset()
-    ptzControl.zoom_relative(0.5,0.4)
+    ptz = ptzControl()
+    ptz.goto_preset()
+    ptz.zoom_relative(0.5,0.4)
 ```
 Then run like this :
 ```shell
